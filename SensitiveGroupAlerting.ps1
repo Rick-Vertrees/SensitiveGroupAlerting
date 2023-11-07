@@ -223,8 +223,8 @@ Function SensitiveGroupReport {
                 ContentType = 'html'
                 }
 
-                $Message1 = New-MgUserMessage -UserId BA_Ops@radpartners.com -Body $body1 -ToRecipients $Recipient -Subject $EmailSubject
-                Send-MgUserMessage -UserId BA_Ops@radpartners.com -MessageId $Message1.Id
+                $Message1 = New-MgUserMessage -UserId <Alerting Email> -Body $body1 -ToRecipients $Recipient -Subject $EmailSubject
+                Send-MgUserMessage -UserId <Alerting Email> -MessageId $Message1.Id
             
             }
         }
